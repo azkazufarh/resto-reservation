@@ -3,90 +3,56 @@
 
 <head>
     <title>Grid Food Menu</title>
-    <!--Google Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/sidebar-menu.css">
+    <link rel="stylesheet" href="../../css/utilities.css">
+    <link rel="stylesheet" href="../../css/menu.css">
     <!--Stylesheet-->
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
-    <div class="menu">
-        <div class="heading">
-            <h1>Goks Resto</h1>
-            <h3>&mdash; MENU &mdash; </h3>
-        </div>
-        <div class="food-items">
-            <img src="borger.jpeg">
-            <div class="details">
-                <div class="details-sub">
-                    <h5>Borger Ayam</h5>
-                    <h5 class="price"> Rp 15.000 </h5>
+    <section class="overview overflow-auto">
+        <main class="main-wrapper">
+            <div class="ps-lg-0">
+                <div class="menu">
+                    <div class="heading">
+                        <h1>Choose your menu</h1>
+                        <h3>&mdash; MENU &mdash; </h3>
+                    </div>
+                    <div class="food-items">
+                        <img src="" class="img-fluid">
+                        <div class="details">
+                            <div class="details-sub">
+                                <h5>Borger Ayam</h5>
+                                <h5 class="price"> Rp 15.000 </h5>
+                            </div>
+                            <p>Burger daging sapi dengan saus nikmat dan roti.</p>
+                            <button>Order</button>
+                        </div>
+                    </div>
                 </div>
-                <p>Burger daging sapi dengan saus nikmat dan roti.</p>
-                <button>Add To Cart</button>
             </div>
-        </div>
+        </main>
 
-        <div class="food-items">
-            <img src="chicken.jpeg">
-            <div class="details">
-                <div class="details-sub">
-                    <h5>Ayam Bakar Goks</h5>
-                    <h5 class="price"> Rp 25.000 </h5>
+        <section class="sidebar">
+            <div class="content pt-50 pb-30 ps-30">
+                <div class="user text-center pb-50 pe-30">
+                    <h2 class="fw-bold text-xl color-palette-1 m-0">KuyMakan</h2>
+                    <p class="color-palette-2 m-0">Your reservation</p>
                 </div>
-                <p>Ayam dibakar pake madu manis.</p>
-                <button>Add To Cart</button>
+                <div class="sidebar-footer pt-73 pe-30">
+                    <div class="footer-card">
+                        <a class="btn btn-get-started w-100 fw-medium text-xs text-center text-white rounded-pill" href="#" role="button">Pay Now!</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+    </section>
 
-        <div class="food-items">
-            <img src="sotoayam.jpeg">
-            <div class="details">
-                <div class="details-sub">
-                    <h5>Soto Ayam</h5>
-                    <h5 class="price"> Rp 20.000 </h5>
-                </div>
-                <p>Makanan Tradisional Indonesia.</p>
-                <button>Add To Cart</button>
-            </div>
-        </div>
 
-        <div class="food-items">
-            <img src="Spaghetti.jpeg">
-            <div class="details">
-                <div class="details-sub">
-                    <h5>Spaghetti</h5>
-                    <h5 class="price"> Rp 30.000 </h5>
-                </div>
-                <p>Spaghetti pake Bakso authentic</p>
-                <button>Add To Cart</button>
-            </div>
-        </div>
 
-        <div class="food-items">
-            <img src="salmon.jpeg">
-            <div class="details">
-                <div class="details-sub">
-                    <h5>Salmon Panggang</h5>
-                    <h5 class="price"> Rp 40.000 </h5>
-                </div>
-                <p>Salmon di Panggang</p>
-                <button>Add To Cart</button>
-            </div>
-        </div>
-
-        <div class="food-items">
-            <img src="Sandwich.jpeg">
-            <div class="details">
-                <div class="details-sub">
-                    <h5>Sandwich</h5>
-                    <h5 class="price"> Rp 10.000 </h5>
-                </div>
-                <p>Roti dengan ayam, keju dan selada.</p>
-                <button>Add To Cart</button>
-            </div>
-        </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
 </html>
