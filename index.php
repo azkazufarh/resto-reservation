@@ -21,6 +21,7 @@
                 <div class="navbar-nav">
                     <a class="nav-link active" href="#">Home</a>
                     <a class="nav-link" href="#">Menu's</a>
+                    <a class="nav-link" href="pages/user/reservation.php">Reservation</a>
                     <a class="nav-link" href="#">About Us</a>
                     <a class="nav-link" href="pages/auth/login.php">Login</a>
                 </div>
