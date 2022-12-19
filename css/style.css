@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+/* Navbar */
+.bg-main {
+  background-color: #982615;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}
+
+.btn-primary {
+  background-color: #982615 !important;
+}
+
+/* Login */
+.login-form {
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: white !important;
+}
+
+.login-form h1 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.login-form p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.login-form input {
+  font-size: 16px;
+  width: 100%;
+  padding: 15px 10px;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+}
+
+.login-form button {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 10px 15px;
+  width: 50%;
+  border-radius: 5px;
+  border: 0;
+}
+
+/* Reservation CSS */
+/* .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: 420px 420px;
+}
+.card-img {
+  background: url("card-img.jpg") center/cover no-repeat;
+}
+.banner h2 {
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+.card-content {
+  background: #dd9955;
+  height: 330px;
+}
+.card-content h3 {
+  text-align: center;
+  color: #000;
+  padding: 25px 0 10px 0;
+  font-size: 26px;
+  font-weight: 500;
+}
+.form-row {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+form select,
+form input {
+  display: block;
+  width: 100%;
+  margin: 15px 12px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #eee;
+  font-weight: 300;
+}
+form input[type="text"],
+form input[type="number"],
+form input::placeholder,
+select {
+  color: #9a9a9a;
+}
+form input[type="submit"] {
+  color: #fff;
+  background: #f2745f;
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form input[type="submit"]:hover {
+  opacity: 0.9;
+}
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: 100%;
+    width: 100vw;
+  }
+  .card-img {
+    height: 330px;
+  }
+} */
