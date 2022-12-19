@@ -1,3 +1,9 @@
+<?php
+require '../../function/function.php';
+
+$orders = query("SELECT * FROM `order`");
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -29,7 +35,7 @@
                             <path d="M10.9033 3.75024H3.90332V10.7502H10.9033V3.75024Z" stroke="#7E8CAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <p class="item-title m-0">
-                            <a href="" class="text-lg text-decoration-none">Overview</a>
+                            <a href="../admin/index.php" class="text-lg text-decoration-none">Overview</a>
                         </p>
                     </div>
                     <div class="item mb-30">
@@ -39,7 +45,7 @@
                             <path d="M3.90332 6.41406H21.9033" stroke="#7E8CAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <p class="item-title m-0">
-                            <a href="../member/transactions.html" class="text-lg text-decoration-none">Order</a>
+                            <a href="../admin/order.php" class="text-lg text-decoration-none">Order</a>
                         </p>
                     </div>
                     <div class="item mb-30">
@@ -47,7 +53,7 @@
                             <path d="M21.9033 11.9141C21.9068 13.234 21.5984 14.536 21.0033 15.7141C20.2978 17.1258 19.2131 18.3133 17.8708 19.1434C16.5285 19.9735 14.9816 20.4135 13.4033 20.4141C12.0835 20.4175 10.7814 20.1092 9.60332 19.5141L3.90332 21.4141L5.80332 15.7141C5.20825 14.536 4.89988 13.234 4.90332 11.9141C4.90393 10.3358 5.34393 8.78894 6.17404 7.44664C7.00415 6.10434 8.19157 5.01966 9.60332 4.31409C10.7814 3.71902 12.0835 3.41065 13.4033 3.41409H13.9033C15.9877 3.52908 17.9564 4.40885 19.4325 5.88495C20.9086 7.36105 21.7883 9.32974 21.9033 11.4141V11.9141Z" stroke="#7E8CAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <p class="item-title m-0">
-                            <a href="" class="text-lg text-decoration-none">Costumers</a>
+                            <a href="../admin/costumers.php" class="text-lg text-decoration-none">Costumers</a>
                         </p>
                     </div>
                     <div class="item mb-30">
@@ -55,7 +61,7 @@
                             <path d="M21.9033 11.9141C21.9068 13.234 21.5984 14.536 21.0033 15.7141C20.2978 17.1258 19.2131 18.3133 17.8708 19.1434C16.5285 19.9735 14.9816 20.4135 13.4033 20.4141C12.0835 20.4175 10.7814 20.1092 9.60332 19.5141L3.90332 21.4141L5.80332 15.7141C5.20825 14.536 4.89988 13.234 4.90332 11.9141C4.90393 10.3358 5.34393 8.78894 6.17404 7.44664C7.00415 6.10434 8.19157 5.01966 9.60332 4.31409C10.7814 3.71902 12.0835 3.41065 13.4033 3.41409H13.9033C15.9877 3.52908 17.9564 4.40885 19.4325 5.88495C20.9086 7.36105 21.7883 9.32974 21.9033 11.4141V11.9141Z" stroke="#7E8CAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <p class="item-title m-0">
-                            <a href="" class="text-lg text-decoration-none">Food Menu's</a>
+                            <a href="../admin/menu.php" class="text-lg text-decoration-none">Food Menu's</a>
                         </p>
                     </div>
                     <div class="item mb-30">
@@ -64,7 +70,7 @@
                             <path d="M12.9033 2.41406V12.4141" stroke="#7E8CAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <p class="item-title m-0">
-                            <a href="" class="text-lg text-decoration-none">Log Out</a>
+                            <a href="../logout.php" class="text-lg text-decoration-none">Log Out</a>
                         </p>
                     </div>
                 </div>
@@ -103,10 +109,10 @@
                                                 <path d="M26.4375 29.5L15.5 29.5" stroke="#B7B0F4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                                             </g>
                                         </svg>
-                                        <p class="color-palette-1 mb-0 ms-12">Game<br> Desktop</p>
+                                        <p class="color-palette-1 mb-0 ms-12">Total<br> Income</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm color-palette-2 mb-1">Total Spent</p>
+                                        <p class="text-sm color-palette-2 mb-1">Today</p>
                                         <p class="text-2xl color-palette-1 fw-medium m-0">Rp 18.000.500</p>
                                     </div>
                                 </div>
@@ -122,35 +128,34 @@
                                 <tr class="color-palette-1">
                                     <th class="text-start" scope="col">Name</th>
                                     <th scope="col">Date</th>
-                                    <th scope="col">Time</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Detail</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="align-middle">
-                                    <th scope="row">
-                                        <div class="game-title-header">
-                                            <p class="game-title fw-medium text-start color-palette-1 m-0">Azka</p>
-                                        </div>
-                                    </th>
-                                    <td>
-                                        <p class="fw-medium color-palette-1 m-0">20 January 2023</p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-medium text-start color-palette-1 m-0">08.00 PM</p>
-                                    </td>
-                                    <td>
-                                        <div>
-                                            <span class="float-start icon-status pending"></span>
-                                            <p class="fw-medium text-start color-palette-1 m-0 position-relative">
-                                                Waiting</p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <a class="btn btn-primary">Order Details</a>
-                                    </td>
-                                </tr>
+                                <?php foreach ($orders as $order) : ?>
+                                    <tr class="align-middle">
+                                        <th scope="row">
+                                            <div class="game-title-header">
+                                                <p class="game-title fw-medium text-start color-palette-1 m-0"><?= $order['id_customer'] ?></p>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <p class="fw-medium color-palette-1 m-0"><?= $order['bookedfor'] ?></p>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <span class="float-start icon-status pending"></span>
+                                                <p class="fw-medium text-start color-palette-1 m-0 position-relative">
+                                                    <?php if ($order['confirmation'] == 1) echo "Success";
+                                                    else echo "Failed" ?></p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="order-detail.php?id=<?= $order['id'] ?>" class="btn btn-primary">Order Details</a>
+                                        </td>
+                                    </tr>
+                                <?php endforeach ?>
                             </tbody>
                         </table>
                     </div>
